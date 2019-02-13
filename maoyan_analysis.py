@@ -1,0 +1,1 @@
+#TODO(me): get data from file , cut the word , get the most common word & pie for score & word cloud also
