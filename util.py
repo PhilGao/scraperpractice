@@ -1,6 +1,6 @@
 import datetime
-import time
 from threading import current_thread
+
 
 def convert_to1970s(dt):
     '''
@@ -15,10 +15,10 @@ def convert_to1970s(dt):
     except TypeError:
         print('Please check the year month day hour minute second ms is valid')
     except Exception as e:
-        print('threading :',current_thread(),e)
+        print('threading :', current_thread(), e)
 
-    #return int(time.mktime(dt.timetuple()) * 1000)
+    # return int(time.mktime(dt.timetuple()) * 1000)
 
 
 def convert_from1970s(ms):
-    return datetime.datetime.fromtimestamp(ms/1000).strftime('%Y-%m-%d %H:%M:%S')
+    return datetime.datetime.fromtimestamp(ms / 1000).strftime('%Y-%m-%d %H:%M:%S')
